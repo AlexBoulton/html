@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: clip;
+}
+
+.button {
+  border: 0.5px solid black;
+  font: inherit;
+  color: black;
+  background: #f2cdfa;
+  text-decoration: none;
+  font-size: 0.7rem;
+  letter-spacing: 0.07em;
+  padding: 0.2em;
+  display: inline-flex;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #f2cdfa;
+}
+
+.button svg {
+  fill: currentColor;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #f2cdfa;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: solid black 0.5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Modal cancel button */
+.modal-cancel-btn {
+  width: auto !important;
+  padding: 10px 20px !important;
+  background-color: #fc9e97 !important;
+}
+
+/* Modal Image container and avatar */
+.modal-img-container {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.modal-avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.modal-container {
+  padding: 16px;
+}
+
+span.modal-psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal-container button[type=submit],
+.modal-submit-btn {
+  width: auto !important;
+  padding: 10px 20px !important;
+  min-width: 100px !important;
+  background-color: #9fe7a3 !important;
+}
+
+.modal-container button[type=submit] {
+  margin-left: auto !important;
+  display: block !important;
+}
+
+/* Modal overlay (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+/* Modal Close Button (x) */
+.modal-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #fc9e97;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw-login {
+     display: block;
+     float: none;
+  }
+  .cancelbtn-login {
+     width: 100%;
+  }
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #f2cdfa;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: solid black 0.5px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Signup button styles handled in clearfix-signup */
+
+/* Modal container elements */
+.modal-container {
+  padding: 16px;
+}
+
+.modal-container label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+
+.modal-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+.modal-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  background: #f1f1f1;
+}
+
+.modal-container select:focus,
+.modal-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.modal-container select option:hover,
+.modal-container select option:focus {
+  background-color: #f2cdfa;
+  box-shadow: 0 0 10px 100px #f2cdfa inset;
+}
+
+
+/* Narrow variant for text-only modal */
+.modal-content--narrow {
+  width: 50%;
+  max-width: 500px;
+  padding: 40px;
+  margin: 15% auto;
+  text-align: center;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Modal action buttons row */
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.modal-actions .modal-cancel-btn {
+  background-color: #fc9e97 !important;
+  width: auto !important;
+  padding: 10px 20px !important;
+  flex-shrink: 0;
+}
+
+.modal-actions .modal-submit-btn {
+  background-color: #9fe7a3 !important;
+  width: auto !important;
+  padding: 10px 20px !important;
+  margin-left: auto !important;
+  flex-shrink: 0;
+}
+
+.modal-actions::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #f2cdfa;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: solid black 0.5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #9fe7a3;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #fc9e97 !important;
+  color: black !important;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.nav {
+  grid-column: 3;
+  grid-row: 1;
+  place-self: start end;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav button {
+  padding: 8px 16px;
+  height: 36px;
+  min-width: 80px;
+  white-space: nowrap;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: #dacdfa;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav button:hover {
+  background-color: #f2cdfa;
+}
+    .logo {
+            grid-column: 1;
+            grid-row: 1 / 3;
+        }
+.options-button {
+  anchor-name: --options-button-anchor;
+}
+.items {
+  background-color: #aba8b3;
+  border-radius: 8px;
+  padding: 8px;
+  min-width: 150px;
+  list-style: none;
+  margin: 0;
+  position-anchor: --options-anchor;
+  position: absolute;
+  top: anchor(bottom);
+  left: anchor(left);
+  margin-top: 4px;
+  width: auto;
+  height: fit-content;
+  max-height: fit-content;
+}
+
+.items[popover]:popover-open {
+  display: block !important;
+}
+
+.items li {
+  width: auto;
+  height: auto;
+  display: list-item;
+}
+
+.items a {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.items a {
+  display: block;
+  text-decoration: none;
+  padding: 0.1rem 0.5rem;
+  color: black;
+  border-radius: 6px;
+}
+
+.items a:hover,
+.items a:focus {
+  background: #f2cdfa;
+}
+
