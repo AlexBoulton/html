@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.google.com/specimen/DM+Sans?preview.script=Latn"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+       <header class="hero">
+      <div class="logo">
+        <img src="images/Flower Logo.PNG" alt="Logo" />
+      </div>
+      
+      <nav class="nav">
+        <button class="button options-button" popovertarget="menu" style="anchor-name: --options-anchor">
+          Options
+          <svg viewBox="0 0 320 512" width="12" aria-hidden="true">
+            <path
+              d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
+            />
+          </svg>       
+        </button>
+      <button class="button home-button" onclick="window.location.href='home.html'">Home</button>
+      <button class="button home-button" onclick="window.location.href='search.html'">Search</button>
+
+      <menu id="menu" class="items" popover>
+        <li><a href="#plan-1">Boquets</a></li>
+        <li><a href="#plan-2">Events</a></li>
+        <li><a href="#plan-3">Pre Order</a></li>
+      </menu>
+      </nav>
+          <section class="thankyou">
+      <h1>Thank you for signing up!</h1>
+      <p>We appreciate your interest in our flower shop. We will be in touch with you soon.</p>
+      <button class="button backtohome-button" onclick="window.location.href='home.html'">Back to Home</button>
+        </section>
+    </header>
+    </body>
+</html>

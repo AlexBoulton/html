@@ -79,7 +79,6 @@ img.modal-avatar {
 .modal-container {
   padding: 16px;
 }
-
 span.modal-psw {
   float: right;
   padding-top: 16px;
@@ -637,4 +636,126 @@ h3 {
   object-fit: cover;
   display: block;
   margin: 0 auto 20px auto;
+}
+
+/* form container elements */
+.form-container {
+  padding: 16px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+
+.form-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  background: #f1f1f1;
+}
+
+.form-container select:focus,
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container select option:hover,
+.form-container select option:focus {
+  background-color: #f2cdfa;
+  box-shadow: 0 0 10px 100px #f2cdfa inset;
+}
+
+.form-actions { 
+  display: flex;
+}
+.form-cancel-btn {
+  width: auto !important;
+  padding: 10px 20px !important;
+  background-color: #fc9e97 !important;
+}
+
+.form-actions .form-cancel-btn {
+  background-color: #fc9e97 !important;
+  width: auto !important;
+  padding: 10px 20px !important;
+  flex-shrink: 0;
+}
+
+.form-submit-btn {
+  width: auto !important;
+  padding: 10px 20px !important;
+  min-width: 100px !important;
+  background-color: #9fe7a3 !important;
+}
+.form-actions .form-submit-btn {
+  background-color: #9fe7a3 !important;
+  width: auto !important;
+  padding: 10px 20px !important;
+  margin-left: auto !important;
+  flex-shrink: 0;
+}
+.form-container button[type=submit] {
+  margin-left: auto !important;
+  display: block !important;
+}
+/* signup.html specific styles*/
+body.signup-page {
+background-color: white;
+}
+
+body.signup-page .modal-content {
+  position: static;
+  margin: 5% auto;
+  max-width: 500px;
+  width: 90%;
+}
+
+body.signup-page .modal-close {
+  display: none;
+}
+
+
+.backtohome-button {
+  width: auto !important;
+  padding: 10px 20px !important;
+  background-color: #fc9e97 !important;
+}
+
+.backtohome-actions .backtohome-button {
+  background-color: #fc9e97 !important;
+  width: auto !important;
+  padding: 10px 20px !important;
+  flex-shrink: 0;
+}
+
+
+form.search-form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+form.search-form::after {
+  content: "";
+  clear: both;
+  display: table;
 }
